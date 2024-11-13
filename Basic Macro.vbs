@@ -18,8 +18,9 @@ End If
 
 startTime = Timer
 
-Do
+WScript.Sleep 3000
 
+Do
     Set WshShell = CreateObject("WScript.Shell")
     WshShell.SendKeys message
 
@@ -30,3 +31,4 @@ Do
         If elapsedTime >= CInt(duration) Then Exit Do
     End If
 Loop
+'Go to https://github.com/Gxldrun/Visual-Basic-Scripts for the ENTER version
